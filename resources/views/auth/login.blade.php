@@ -78,7 +78,10 @@
     <script text="text/javascript">
         $(document).ready(() => {
             $("#google_btn").click(() => {
-                auth2.signIn({ scope: 'profile email' }).then(onGoogleSignIn);
+                if(auth2 === undefined)
+                    alert("No google client id in server side!");
+                else
+                    auth2.signIn({ scope: 'profile email' }).then(onGoogleSignIn);
             });
 
             function onGoogleSignIn(_googleUser){
