@@ -15,3 +15,7 @@ PHP 7.3.12, MySQL 8.0.21
 ## 安裝需求套件
 
 npm install && npm run dev && composer install
+
+## 啟動Service
+
+php artisan serve
