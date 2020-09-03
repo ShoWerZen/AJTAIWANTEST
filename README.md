@@ -14,11 +14,21 @@ PHP 7.3.12, MySQL 8.0.21
 
 ## 安裝需求套件
 
+```
 npm install && npm run dev && composer install
+```
+
+## Migrate
+
+```
+php artisan migrate
+```
 
 ## 增加crontab
 
+```
 * * * * * php /path/to/artisan schedule:run >> /dev/null 2>&1
+```
 
 ## 啟動Service
 
