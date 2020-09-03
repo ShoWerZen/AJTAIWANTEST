@@ -26,7 +26,7 @@ class Kernel extends ConsoleKernel
     {
         $schedule->call(function () {
             \App\Http\Controllers\FortuneController::getTodayFortune();
-        })->everyMinute();
+        })->hourly();
     }
 
     /**
